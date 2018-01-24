@@ -31,5 +31,11 @@ var fizzle = n =>{
     for(i=0;i<nums.length;i++){
       total+=parseInt(nums[i])
     }
-    
-    return total
+}
+    return total;
+//
+//
+//
+//
+//
+//
