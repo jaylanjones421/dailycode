@@ -63,3 +63,18 @@ var DNAStrand = dna =>{
 //
 //4
 //
+// Keeping a Zen garden clean is hard work.
+
+// Write a function that, given a string, replaces any word that is not "rock" or "gravel" with the word "gravel"
+
+// For example, if you were passed a string that contained "slug spider rock gravel rock beetle", your function would return "gravel gravel rock gravel rock gravel"
+
+var str="slug spider rock gravel rock beetle";
+var zen = str =>{
+  zenStr=str.split(' ');
+  for(i=0;i<zenStr.length;i++){
+    if(zenStr[i]!=='rock'&&zenStr[i]!=='gravel'){
+      zenStr.splice(i,1,'gravel')
+    }
+  }return zenStr.join(' ');
+}
