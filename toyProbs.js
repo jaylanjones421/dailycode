@@ -38,4 +38,28 @@ var fizzle = n =>{
 //
 //
 //
+//3
+// In DNA strings, symbols "A" and "T" are complements of each other, as are "C" and "G". Given one side of the DNA, you need to find the complementary side.
+
+// DNAStrand("ATTGC") ==>  "TAACG"
+// DNAStrand("GTAT")  ==>  "CATA"
+
+var DNAStrand = dna =>{
+  var complement='';
+  for(i=0;i<dna.length;i++){
+    if(dna[i]==='A'){
+      complement+="T"
+    }else if(dna[i]==='T'){
+      complement+="A"
+    }else if(dna[i]==='C'){
+      complement+="G"
+    }else if(dna[i]==='G'){
+      complement+="C"
+    }
+  }return complement;
+}
+
+//
+//
+//4
 //
