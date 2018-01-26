@@ -31,8 +31,9 @@ var fizzle = n =>{
     for(i=0;i<nums.length;i++){
       total+=parseInt(nums[i])
     }
-}
     return total;
+}
+    
 //
 //
 //
@@ -69,7 +70,6 @@ var DNAStrand = dna =>{
 
 // For example, if you were passed a string that contained "slug spider rock gravel rock beetle", your function would return "gravel gravel rock gravel rock gravel"
 
-var str="slug spider rock gravel rock beetle";
 var zen = str =>{
   zenStr=str.split(' ');
   for(i=0;i<zenStr.length;i++){
@@ -78,3 +78,27 @@ var zen = str =>{
     }
   }return zenStr.join(' ');
 }
+//
+//
+//
+//5
+//
+//
+// Your task is to make a function that can take any non-negative integer as a argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+// Examples:
+
+// Input: 21445 Output: 54421
+// Input: 145263 Output: 654321
+// Input: 1254859723 Output: 9875543221
+
+var descending = x =>{
+  var arr = x.toString().split('').sort((a,b)=>b-a);
+  return Number(arr.join(''));
+}
+//
+//
+//
+//
+//6
+//
+//
