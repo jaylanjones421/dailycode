@@ -108,4 +108,20 @@ var descending = x =>{
 // (123) 456-7890 (don't forget the space after the close parentheses) 
 
 var validPhoneNumber=(n)=> (n[0]==='('&& n[4]===')'&& n[9]==='-' && n.length===14)
+//
+//
+//
+//7
+// Given an array of numbers, determine whether the sum of all of the numbers is odd or even.
 
+// Give your answer in string format as 'odd' or 'even'.
+
+// If the input array is empty consider it as: [0] (array with a zero).
+function oddOrEven(array) {
+  if( array.length<1){
+    return 'even';
+  }
+  else {
+   return array.reduce((x,i)=>x+i)%2===0 ? 'even':'odd';
+  }
+  }
