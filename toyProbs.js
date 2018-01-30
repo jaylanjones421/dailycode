@@ -153,3 +153,22 @@ var trollFilter=(str)=>{
 };
 //
 //
+//
+//
+//
+//9
+//
+//
+// this is a joke tp that i made as an example to students 
+const goodStudent = () =>{
+  const sink=[1,2,3,3,4,];
+  const dishwasher=[]
+  if(sink.length<1){
+    return 'Congrats no dirty dishes '
+  }else{
+    for(i=sink.length;i>0;i--){
+      dishwasher.push(sink[i]);
+      console.log('keep up the good work!')
+    }return "you did it, good job"
+  }
+}
